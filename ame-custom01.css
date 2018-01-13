@@ -419,3 +419,12 @@ border-color:#b3b3b3;
 
 
 /* その他、拡張があれば記述 */
+
+/* カラー定義
+--------------------------------------------*/
+:root {
+  --key-color: #36664e;
+  --key-color-light: #64ad8a;
+  --body-background-color: #dfeee6;
+}
+
