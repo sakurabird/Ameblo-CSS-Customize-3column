@@ -114,7 +114,7 @@ color:#333333;
 .skinArticleTitle,.skinArticleTitle:hover,.skinArticleTitle:focus,.skinArticleTitle:visited{
 font-size:1.31em;
 font-weight:bold;
-color:#0066cc;
+color: var(--key-color);
 }
 
 
