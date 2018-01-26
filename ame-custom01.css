@@ -30,8 +30,8 @@
   --key-color-light: #64ad8a; /* キーカラー 薄目の色 */
   --body-background-color: #dfeee6; /* とても薄い色 */
   /* Text Color */
-  --base-text-color: #182e23;
-  --link-text-color: #182e23;
+  --base-text-color: #1e392c; /* かなり黒に近い色 */
+  --link-text-color: #4d9270; /* リンクがある文字用 */
 }
 
 
@@ -59,7 +59,7 @@ color:#333333;
 
 /* リンク */
 .skinAnchorColor,.skinBaseAnchorColor,.skinBlock a,a{
-color:#0066cc;
+color: var(--link-text-color);
 }
 
 
