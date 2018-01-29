@@ -65,7 +65,7 @@ color: var(--link-text-color);
 
 /* 訪問済のリンク */
 .skinAnchorVisitedColor,.skinBaseAnchorVisitedColor,.skinBlock a:visited,a:visited{
-color:#996699;
+  color: var(--link-text-color);
 }
 
 
