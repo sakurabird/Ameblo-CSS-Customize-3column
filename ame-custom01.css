@@ -33,6 +33,7 @@
   --base-text-color: #333333; /* かなり黒に近い色 */
   --link-text-color: #4d9270; /* リンクがある文字用 */
   --weak-text-color: #a7d1bc; /* 日付の色など */
+  --strong-text-color: #f65b63; /* NEW! 更新!などの色 */
 }
 
 
@@ -84,7 +85,7 @@ color: var(--link-text-color);
 
 /* 強い文字 （NEW! 更新!など）*/
 .skinStrongColor,.skinBaseStrongColor{
-color:#ff3399;
+  color: var(--strong-text-color);
 }
 
 
