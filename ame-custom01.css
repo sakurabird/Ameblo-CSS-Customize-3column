@@ -30,8 +30,9 @@
   --key-color-light: #64ad8a; /* キーカラー 薄目の色 */
   --body-background-color: #dfeee6; /* とても薄い色 */
   /* Text Color */
-  --base-text-color: #1e392c; /* かなり黒に近い色 */
+  --base-text-color: #333333; /* かなり黒に近い色 */
   --link-text-color: #4d9270; /* リンクがある文字用 */
+  --weak-text-color: #a7d1bc; /* 日付の色など */
 }
 
 
@@ -53,7 +54,7 @@
 
 /* 通常文字 */
 .skinTextColor,.skinBaseTextColor,.skinBlock,body{
-color:#333333;
+  color: var(--base-text-color);
 }
 
 
@@ -71,13 +72,13 @@ color: var(--link-text-color);
 
 /* マウスオーバーしたときのリンク */
 .skinAnchorHoverColor,.skinBaseAnchorHoverColor,.skinBlock a:focus,.skinBlock a:hover,a:focus,a:hover{
-color:#ff3366;
+  color: var(--base-text-color);
 }
 
 
 /* 弱い文字 （日付など）*/
 .skinWeakColor,.skinBaseWeakColor{
-color:#999999;
+  color: var(--weak-text-color);
 }
 
 
