@@ -26,6 +26,7 @@
 ＊:::＊:::＊:::＊:::＊:::＊:::＊:::＊:::＊:::＊:::＊:::＊:::＊
 */
 :root {
+  --white-color: #ffffff; /* 白色 */
   --key-color: #36664e; /* キーカラー 濃い目の色 */
   --key-color-light: #64ad8a; /* キーカラー 薄目の色 */
   --body-background-color: #dfeee6; /* とても薄い色 */
@@ -125,7 +126,9 @@ color: var(--key-color);
 --------------------------------------------*/
 
 /* skinMenuTitle サイドメニュータイトル文字 */
-.skinMenuTitle{}
+.skinMenuTitle{
+  color: var(--white-color);
+}
 
 
 
