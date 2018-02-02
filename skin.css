@@ -1,0 +1,577 @@
+@charset "utf-8";
+/*--------------------------------------------------
+skin.css
+$Id: skin.css,v 1.3 2011/08/01 09:45:10 oyama_yuichi Exp $
+--------------------------------------------------*/
+
+/*TOC===============================================
+
+カラー設定
+	A 基本カラー設定
+	B 記事/メッセージ　カラー設定
+	C サイドバー　カラー設定
+	D 枠の外の配色
+ボタンのスタイル
+ブロックごとのスタイル
+
+==================================================*/
+
+
+
+
+/*==============================================
+
+　カラー設定
+
+==============================================*/
+
+
+/* 【A　基本カラー設定】
+============================================*/
+
+/* テキスト色
+--------------------------------------------*/
+
+/* 地色テキスト */
+.skinTextColor,
+.skinBaseTextColor,
+.skinBlock,
+body{
+color:#333;			/* 【CSS規則】colorのみ指定可能 */
+}
+
+
+/* リンク色（基本） */
+.skinAnchorColor,
+.skinBaseAnchorColor,
+.skinBlock a,
+a{
+color:#06c;			/* 【CSS規則】colorのみ指定可能 */
+}
+
+
+/* リンク色（visited） */
+.skinAnchorVisitedColor,
+.skinBaseAnchorVisitedColor,
+.skinBlock a:visited,
+a:visited{
+color:#969;			/* 【CSS規則】colorのみ指定可能 */
+}
+
+
+/* リンク色（hover） */
+.skinAnchorHoverColor,
+.skinBaseAnchorHoverColor,
+.skinBlock a:focus,
+.skinBlock a:hover,
+a:focus,
+a:hover{
+color:#f36;			/* 【CSS規則】colorのみ指定可能 */
+}
+
+
+/* 淡　テキスト色 */
+.skinWeakColor,
+.skinBaseWeakColor{
+color:#999;			/* 【CSS規則】colorのみ指定可能 */
+}
+
+
+/* 強調　テキスト色 */
+.skinStrongColor,
+.skinBaseStrongColor{
+color:#f39;			/* 【CSS規則】colorのみ指定可能 */
+}
+
+
+
+
+/* 背景色
+--------------------------------------------*/
+/* 背景色 */
+.skinBgColor,
+.skinBaseBgColor,
+.skinBlock{
+background-color:#fff;		/* 【CSS規則】background-colorのみ指定可能 */
+}
+
+
+/* 淡　背景色 */
+.skinWeakBgColor,
+.skinBaseWeakBgColor{
+background-color:#f7f7f7;	/* 【CSS規則】background-colorのみ指定可能 */
+}
+
+
+/* 強調　背景色 */
+.skinStrongBgColor,
+.skinBaseStrongBgColor{
+background-color:#f7f7f7;	/* 【CSS規則】background-colorのみ指定可能 */
+}
+
+
+
+/* 枠線色（一覧ページの枠線色など）
+--------------------------------------------*/
+.skinBorderColor,
+.skinBaseBorderColor,
+.skinBlock{
+border-color:#ddd;		/* 【CSS規則】border-colorのみ指定可能 */
+}
+
+
+
+/* リスト境界線色（メインカラム一覧ページのリストなど　※サイドバー内のリスト境界線色は別）
+--------------------------------------------*/
+.skinBorderHr,
+.skinBorderList li{
+border-color:#b3b3b3;	/* 【CSS規則】border-colorのみ指定可能 */
+}
+
+
+
+
+
+/* 【B　記事/メッセージ　カラー設定】
+============================================*/
+/*
+ *
+ * ※基本カラー設定と配色を変える箇所のみ指定
+ * ※テキストの色のみ
+ *
+ */
+
+/*
+.skinMainArea,
+.skinMainArea .skinTextColor,
+.skinArticleTextColor,
+.skinArticleBlock{}
+
+.skinMainArea .skinAnchorColor,
+.skinArticleAnchorColor,
+.skinMainArea a,
+.skinArticleBlock a{}
+
+.skinMainArea .skinAnchorVisitedColor,
+.skinArticleAnchorVisitedColor,
+.skinMainArea a:visited,
+.skinArticleBlock a:visited{}
+
+.skinMainArea .skinAnchorHoverColor,
+.skinArticleAnchorHoverColor,
+.skinMainArea a:focus,
+.skinMainArea a:hover,
+.skinArticleBlock a:focus,
+.skinArticleBlock a:hover{}
+
+.skinMainArea .skinWeakColor,
+.skinArticleWeakColor{}
+
+.skinMainArea .skinStrongColor,
+.skinArticleStrongColor{}
+*/
+
+
+
+
+
+/* 【C　サイドバー　カラー設定】
+============================================*/
+/*
+ *
+ * ※基本カラー設定と配色を変える箇所のみ指定
+ * ※テキストの色のみ
+ *
+ */
+
+/*
+.skinSubArea,
+.skinSubArea .skinTextColor,
+.skinSubTextColor,
+.skinSubBlock{}
+
+.skinSubArea a,
+.skinSubArea .skinAnchorColor,
+.skinSubAnchorColor,
+.skinSubBlock a{}
+
+.skinSubArea a:visited,
+.skinSubArea .skinAnchorVisitedColor,
+.skinSubAnchorVisitedColor,
+.skinSubBlock a:visited{}
+
+.skinSubArea a:focus,
+.skinSubArea a:hover,
+.skinSubArea .skinAnchorHoverColor,
+.skinSubAnchorHoverColor,
+.skinSubBlock a:focus,
+.skinSubBlock a:hover{}
+
+.skinSubArea .skinWeakColor,
+.skinSubWeakColor{}
+
+.skinSubArea .skinStrongColor,
+.skinSubStrongColor{}
+*/
+
+
+
+
+
+/* 【D 枠の外の配色 】
+============================================*/
+/*
+ *
+ * 記事やサイドが枠で囲われているデザインで、
+ * 枠の外の文字の可読性が低い場合に文字の色か、文字の背景を指定する
+ *
+
+.skinFieldBlock a,
+.skinFieldBlock a:visited,
+.skinFieldBlock a:focus,
+.skinFieldBlock a:hover,
+.skinFieldBlock {}
+
+ */
+
+
+
+
+
+/*==============================================
+
+ ボタンのスタイル
+
+==============================================*/
+
+
+/* skinImgBtn 読者になるなどのボタン
+--------------------------------------------*/
+
+/* skinImgBtnM (180px) */
+.skinImgBtnM{
+background-image:url(../img/skin_btn_m.png);
+}
+.skinImgBtnM:hover span,
+.skinImgBtnM:focus span,
+.skinImgBtnM span{
+color:#333;
+}
+
+
+/* skinImgBtnS (128px) */
+.skinImgBtnS{
+background-image:url(../img/skin_btn_s.png);
+}
+.skinImgBtnS:hover span,
+.skinImgBtnS:focus span,
+.skinImgBtnS span{
+background-image:url(//stat100.ameba.jp/common_style/img/skin/cmn/icons/menu_icons/menu_icons_pastel.png);/* アイコン画像を指定 */
+color:#333;
+}
+/*
+ボタンのアイコン画像
+
+menu_icons_pastel.png
+menu_icons_gray.png
+menu_icons_black.png
+menu_icons_white.png
+*/
+
+
+
+/* skinSimpleBtn ページングの次へ、前へボタン
+--------------------------------------------*/
+
+.skinSimpleBtn,
+.skinSimpleBtn:visited,
+.skinSimpleBtn:hover,
+.skinSimpleBtn:focus{
+border:1px solid #ddd;
+background:#fff;
+color:#06c;
+}
+.skinSimpleBtn:hover,
+.skinSimpleBtn:focus{
+background:#f7f7f7;
+}
+
+
+
+
+
+
+
+/*==============================================
+
+ ブロックごとのスタイル
+
+==============================================*/
+
+
+/* ボディ　【CSS規則】bodyタグ自体にはスタイルをあてない
+--------------------------------------------*/
+
+/* skinBody bodyの代わり */
+.skinBody{/* 【簡単カスタム対象】 */
+}
+.skinBody2{}
+.skinBody3{}
+
+
+/* skinFrame 横幅を指定したいときなどに使うフレーム */
+.skinFrame{
+padding-top: 22px;
+}
+
+
+
+/* ヘッダー
+--------------------------------------------*/
+
+/*
+ * .headerBnrArea 広告が出力されるエリア
+ * 広告が出力されないときも、高さを維持したい時に使う
+ *
+ */
+.headerBnrArea{
+/* 注 blog.cssにpadding-bottom:15px;記述有り */
+padding-bottom:15px;
+}
+
+
+/* skinHeaderFrame 広告もブログタイトルも囲う横幅のないヘッダーフレーム */
+.skinHeaderFrame{}
+
+
+/* skinHeaderArea ブログヘッダー */
+.skinHeaderArea{/*【簡単カスタム対象】*/
+/* 注 blog.cssにwidth:980px;の記述有り */
+/* 【簡単カスタム対象】注 margin,paddingの指定禁止 .skinBlogHeadingGroupAreaに指定すること*/
+}
+.skinHeaderArea2{
+/* 【簡単カスタム対象】注 margin,paddingの指定禁止 .skinBlogHeadingGroupAreaに指定すること*/
+}
+
+
+/* skinBlogHeadingGroupArea 【簡単カスタム対象】*/
+.skinBlogHeadingGroupArea{
+/* 【簡単カスタム対象】ブログタイトルと説明のpaddingのみ指定可能 */
+padding: 20px 0 30px;
+}
+
+
+/* skinTitleArea ブログタイトルのブロック */
+.skinTitleArea{/*【簡単カスタム対象】*/
+padding-bottom:4px;
+}
+
+
+/* skinTitle ブログタイトル文字 */
+.skinTitle,
+.skinTitle:visited,
+.skinTitle:hover,
+.skinTitle:focus{
+color:#000;
+font-weight:bold;
+font-size:2.11em;
+}
+
+
+/* skinDescription ブログの説明ブロック */
+.skinDescriptionArea{/*【簡単カスタム対象】*/
+}
+
+/* skinDescription ブログの説明文字 */
+.skinDescription{
+color:#333;
+}
+
+
+
+/* コンテンツエリア
+--------------------------------------------*/
+
+/* skinContentsFrame コンテンツを囲う横幅の無いフレーム */
+.skinContentsFrame{}
+
+
+/* skinContentsArea コンテンツ980pxブロック */
+.skinContentsArea{
+/* 注 blog.cssにwidth:980px;の記述有り */
+}
+
+
+
+/* メインエリア
+--------------------------------------------*/
+
+.skinMainArea{}
+
+
+
+/* メッセージボード
+--------------------------------------------*/
+
+.skinMessageBoard{
+/* 注 blog.cssに margin-bottom の記述有り */
+border-top:1px dotted #979797;
+border-bottom:1px dotted #979797;
+background:#fff;
+}
+.skinMessageBoard2{}
+.skinMessageBoard3{
+padding:16px 30px;
+}
+
+/* カラム別の記述
+.columnA .skinMessageBoard,
+.columnB .skinMessageBoard{}
+
+.columnC .skinMessageBoard,
+.columnD .skinMessageBoard,
+.columnE .skinMessageBoard{}
+*/
+
+
+
+
+/* 記事
+--------------------------------------------*/
+
+/* skinArticle 記事ブロック */
+.skinArticle{
+/* 注　blog.cssに margin-bottom の記述有り */
+padding:16px 0;
+border:1px solid #ddd;
+background:#fff;
+}
+.skinArticle2{}
+.skinArticle3{}
+
+/* カラム別の記述
+.columnA .skinArticle,
+.columnB .skinArticle{}
+
+.columnC .skinArticle,
+.columnD .skinArticle,
+.columnE .skinArticle{}
+*/
+
+
+/* skinArticleHeader 記事ヘッダーブロック */
+.skinArticleHeader{
+margin:0 29px;
+padding:2px 10px;
+border-left:5px solid #e4e4e4;
+}
+.skinArticleHeader2{}
+
+
+/* skinArticleTitle 記事ヘッダー文字 */
+.skinArticleTitle,
+.skinArticleTitle:hover,
+.skinArticleTitle:focus,
+.skinArticleTitle:visited{
+font-size:1.31em;
+font-weight:bold;
+color:#06c;
+}
+
+
+/* skinArticleBody 記事本文ブロック */
+/*
+ * 【デザイン規則】記事の中身の横幅は 2カラム 605px、3カラム 410pxになるように
+ */
+.skinArticleBody{}
+.skinArticleBody2{
+margin:0 29px;
+}
+
+
+/* skinArticleFooter 記事フッターブロック */
+.skinArticleFooter{
+margin:10px 29px 0;
+border-top:1px dotted #949494;
+}
+
+
+
+
+/* サイドエリア
+--------------------------------------------*/
+
+.skinSubArea {}/* 共通 */
+.skinSubA{}/* (300px) */
+.skinSubB{}/* (180px) */
+
+
+
+
+
+/* サイド　メニュー
+--------------------------------------------*/
+
+
+/* skinMenu サイドメニューのブロック */
+.skinMenu{
+/* 注　blog.cssに margin-bottom の記述有り */
+margin-bottom:10px;
+background:#f7f7f7;
+}
+.skinMenu2{}
+
+/* subA subB別の記述
+.skinSubA .skinMenu{}
+.skinSubB .skinMenu{}
+*/
+
+
+
+/* skinMenuHeader サイドメニューヘッダー */
+.skinMenuHeader{
+padding:5px 10px;
+background:#e4e4e4;
+}
+
+/* skinMenuTitle サイドメニュータイトル文字 */
+.skinMenuTitle{}
+
+
+
+/* skinMenuBody サイドメニュー本文ブロック */
+/*
+ * 【デザイン規則】サイドバーの中身の横幅は subA 260px、subB 140px
+ */
+.skinMenuBody{
+margin:10px;
+padding:10px;
+background:#fff;
+}
+
+
+
+
+
+/* サイドバーのリスト、境界線
+--------------------------------------------*/
+/*
+ * 【CSS規則】
+ * ・要素の下に表示すること
+ * ・境界線が持つ余白（margin-bottom, padding-bottom）も設定すること
+ *
+ */
+.skinSubHr,
+.skinSubList li{
+margin-bottom:3px;
+padding-bottom:3px;
+border-bottom:1px dotted #b3b3b3;
+}
+
+/* skinSubA skinSubBで違う場合
+.skinSubA .skinSubHr,
+.skinSubA .skinSubList li{}
+
+.skinSubB .skinSubHr,
+.skinSubB .skinSubList li{}
+*/
