@@ -230,7 +230,7 @@ background:#f7f7f7;
 
 /* skinBody ボディ */
 .skinBody{
-  background-image: url("https://stat.ameba.jp/user_images/20180204/15/ame-custom01/3d/7d/p/o0020002014125064949.png");
+  background-color: var(--body-background-color);
 }/* ←ブログ全体に背景を敷きたいとき */
 
 .skinBody2{}
