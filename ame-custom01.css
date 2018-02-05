@@ -30,6 +30,8 @@
   --key-color: #36664e; /* キーカラー 濃い目の色 */
   --key-color-light: #64ad8a; /* キーカラー 薄目の色 */
   --body-background-color: #dfeee6; /* とても薄い色 */
+  --button-with-icon-background-color: #91c5ab; /* アイコン付きボタン背景色 */
+  --button-with-icon-background-color-hover: #7bb99a;
   /* Text Color */
   --base-text-color: #333333; /* かなり黒に近い色 */
   --link-text-color: #4d9270; /* リンクがある文字用 */
@@ -171,10 +173,14 @@ color:#333333 !important;
 
 /* アイコン付き ボタンの背景画像 ※[横128px 縦28px]のボタンの背景画像を指定 */
 .skinImgBtnS{
-background-image:url(https://stat100.ameba.jp/p_skin/wu_pf_cssedit/img/skin_btn_s.png);
+background-image: none;
+background-color: var(--button-with-icon-background-color);
+border-radius: 3px;
 }
 
-
+.skinImgBtnS:hover {
+    background-color: var(--button-with-icon-background-color-hover);
+}
 
 .skinImgBtnS:hover span,.skinImgBtnS:focus span,.skinImgBtnS span{
 /*
@@ -184,8 +190,8 @@ background-image:url(https://stat100.ameba.jp/p_skin/wu_pf_cssedit/img/skin_btn_
  menu_icons_black.png（黒）
  menu_icons_white.png（白）
 */
-background-image:url(https://stat100.ameba.jp/common_style/img/skin/cmn/icons/menu_icons/menu_icons_pastel.png);
-color:#333333 !important;/* ←ボタンの文字色 */
+background-image:url(https://stat100.ameba.jp/common_style/img/skin/cmn/icons/menu_icons/menu_icons_white.png);
+color: var(--white-color) !important;/* ←ボタンの文字色 */
 }
 
 
