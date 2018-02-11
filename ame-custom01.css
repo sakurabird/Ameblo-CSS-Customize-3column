@@ -32,7 +32,8 @@
   --body-background-color: #dfeee6; /* とても薄い色 */
   --button-with-icon-background-color: #91c5ab; /* アイコン付きボタン背景色 */
   --button-with-icon-background-color-hover: #7bb99a;
-  /* Text Color */
+  --simple-button-color: #539d79; /* ページ送りボタンの枠線と文字の色 */
+  --simple-button-bg-color-hover: #f5faf7; /* ページ送りボタンのホバー時の背景色 */  /* Text Color */
   --base-text-color: #333333; /* かなり黒に近い色 */
   --link-text-color: #4d9270; /* リンクがある文字用 */
   --weak-text-color: #a7d1bc; /* 日付の色など */
@@ -202,17 +203,16 @@ color: var(--white-color) !important;/* ←ボタンの文字色 */
 
 
 .skinSimpleBtn,.skinSimpleBtn:visited,.skinSimpleBtn:hover,.skinSimpleBtn:focus{
-border:1px solid #dddddd;
-background:#ffffff;
-color:#0066cc !important;
+border:1px solid var(--simple-button-color);
+background-color: var(--white-color);
+color: var(--simple-button-color) !important;
 }
 
 
 /* ボタンにマウスオーバー */
 .skinSimpleBtn:hover,.skinSimpleBtn:focus{
-background:#f7f7f7;
+background-color: var(--simple-button-bg-color-hover);
 }
-
 
 
 
