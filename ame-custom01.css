@@ -277,6 +277,7 @@ padding:20px 0 30px;
 
 /* skinContentsArea コンテンツ980pxエリア */
 .skinContentsArea{
+  margin-top: 16px;
 /* 注 ベースのcssにwidth:980px;の記述有り */
 }
 
