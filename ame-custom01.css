@@ -247,8 +247,10 @@ background-color: var(--simple-button-bg-color-hover);
 --------------------------------------------*/
 
 
-/* skinHeaderArea ブログヘッダー980pxエリア */
-.skinHeaderArea{}/* ←ブログヘッダーに背景画像を敷きたいとき */
+.skinHeaderArea{
+height:400px; /* ヘッダー画像の高さ */
+background: url(https://stat.blogskin.ameba.jp/blogskin_images/20180212/01/3c/yQ/p/o09800400ame-custom011518366618483.png) no-repeat 50% 50% ; /* ヘッダー画像のURL */
+}/* ←ブログヘッダーに背景画像を敷きたいとき */
 
 
 /* skinBlogHeadingGroupArea タイトルと説明を囲うエリア */
@@ -258,14 +260,14 @@ padding:20px 0 30px;
 
 
 /* skinTitleArea ブログタイトルのエリア */
-.skinTitleArea{
-padding-bottom:4px;
+.skinTitleArea {
+    display: none;
 }
 
-
 /* skinDescriptionArea ブログの説明エリア */
-.skinDescriptionArea{}
-
+.skinDescriptionArea {
+    display: none;
+}
 
 
 
